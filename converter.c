@@ -1,14 +1,9 @@
-// Converts an input string to it's respective ASCII matrix.
-
 #include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "converter.h"
 
-struct convert {
-    int n, m;
-    int *arr;
-} convert(char text[]){
+struct convert convert(char text[]){
 
     // copy the input text into a local store.
     size_t textlen = strlen(text);
